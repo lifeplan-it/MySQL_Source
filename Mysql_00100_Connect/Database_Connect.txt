@@ -1,0 +1,41 @@
+解説
+MySQLのphpMyAdminから、SQL文を実行する事ができます。
+コマンドプロンプトからのSQL文を実行する方法をまとめます。
+コマンドプロンプトから実行する理由
+・プログラマの立場でPHP/Javaからのデータベース接続方法の基礎を理解する。
+・ユーザー（管理者でない）の場合で遠隔でデータベースを操作する。
+
+手順
+
+XAMPP起動
+XAMPPのコントロールパネルからMySQLを起動します。
+
+コマンドプロンプト起動
+Windows　Shell　を起動します。
+　　スタート→Windowsシステムツール→コマンドプロンプト
+
+MySql接続
+
+基本構文
+MySQL -u [ユーザー名] -h [ホスト名] -p　[データベース名]
+
+サンプルコード
+ユーザー：root
+パスワード：  （無し)
+ホスト名：localhost
+データベース名：waverlife_eng001
+
+C:\XAMPP\MySQL\BIN\mysql -u root -p -h localhost waverlife_eng001
+
+実行結果
+C:\Users\user>C:\XAMPP\MySQL\BIN\mysql -u root -p -h localhost waverlife_eng001
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 26
+Server version: 10.4.11-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [waverlife_eng001]>
